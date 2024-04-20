@@ -1,0 +1,86 @@
+/*div要素（id名「top」）に対する装飾*/
+#top{
+    width: 800px;                       /*横幅*/
+    background-color: #dcc9f4;        /*背景色*/
+    margin:20px auto;                   /*余白*/
+    text-align:center                   /*子要素配置*/
+}
+
+/*p要素（class名「top-child」）に対する装飾*/
+.top-child{
+    width: 20%;                         /*横幅*/
+    background-color:#ffd9df;         /*背景色*/
+    display: inline-block;              /*要素の横並び配置*/
+}
+
+/*div要素（id名「middle」）に対する装飾*/
+#middle{
+    width: 800px;                       /*横幅*/
+    height: 800px;                      /*高さ*/
+    margin:20px auto;                   /*余白*/
+    background-color: #ffd9df;        /*背景色*/
+    position: relative;                 /*ポジション指定(相対位置)*/
+}
+
+/*div要素（id名「middle-child01」）に対する装飾*/
+#middle-child01{
+    width: 200px;                       /*横幅*/
+    height: 200px;                      /*高さ*/
+    background-color: #87ceeb;        /*背景色*/
+    position: absolute;                 /*ポジション指定(絶対位置)*/
+    top:100px;                          /*上からの距離*/
+    left:100px;                         /*左からの距離*/
+}
+
+/*div要素（id名「middle-child02」）に対する装飾*/
+#middle-child02{
+    width: 200px;                       /*横幅*/
+    height: 200px;                      /*高さ*/
+    background-color: #87ceeb;        /*背景色*/
+    position: absolute;                 /*ポジション指定(絶対位置)*/
+    top: 300px;                         /*上からの距離*/
+    left: 300px;                        /*左からの距離*/
+}
+
+/*div要素（id名「middle-child03」）に対する装飾*/
+#middle-child03{
+    width: 200px;                       /*横幅*/
+    height: 200px;                      /*高さ*/
+    background-color: #87ceeb;        /*背景色*/
+    position: absolute;                 /*ポジション指定(絶対位置)*/
+    top: 500px;                         /*上からの距離*/
+    left: 500px;                        /*左からの距離*/
+}
+
+/*div要素（id名「bottom」）に対する装飾*/
+#bottom{
+    width: 800px;                       /*横幅*/
+    height: 300px;                      /*高さ*/
+    margin:20px auto;                   /*余白*/
+    background-color: #87ceeb;        /*背景色*/
+}
+
+/*div要素（id名「bottom-child01」）に対する装飾*/
+#bottom-child01{
+    width: 400px;                       /*横幅*/
+    height: 100px;                      /*高さ*/
+    background-color: #e5dcf0;        /*背景色*/
+}
+
+/*div要素（id名「bottom-child02」）に対する装飾*/
+#bottom-child02{
+    width: 400px;                       /*横幅*/
+    height: 100px;                      /*高さ*/
+    background-color: #e5dcf0;        /*背景色*/
+    position: relative;                 /*ポジション指定(相対位置)*/
+    left:200px;                         /*左からの距離*/
+}
+
+/*div要素（id名「bottom-child03」）に対する装飾*/
+#bottom-child03{
+    width: 400px;                       /*横幅*/
+    height: 100px;                      /*高さ*/
+    background-color: #e5dcf0;        /*背景色*/
+    position: relative;                 /*ポジション指定(相対位置)*/
+    left:400px;                         /*左からの距離*/
+}
