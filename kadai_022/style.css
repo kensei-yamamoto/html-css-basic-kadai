@@ -1,0 +1,102 @@
+/*h1,p,body要素の余白*/
+h1,p,body{
+    margin:0;
+}
+
+/*p,a要素のフォントサイズ*/
+p,a{
+    font-size: 20px;
+}
+
+/*ヘッダーについて*/
+header{
+    margin-bottom: 20px;                        /*下余白*/
+    background-color: rgb(244, 79, 79);         /*背景色*/
+    text-align: center;                         /*配置*/
+}
+
+/*h1要素の文字色*/
+h1{
+    color: rgb(255, 255, 255);
+}
+
+/*main要素の余白(上下左右)*/
+main{
+    margin: 10px;
+}
+
+/*id名parentの要素について*/
+#parent{
+    display: flex;                          /*Flexboxの指定*/
+    justify-content:space-around;           /*一番左と一番右のアイテムも含め、均等な間隔で配置*/
+}
+
+/*class名contentsの要素について*/
+.contents{
+    border:3px solid rgb(238, 204, 204);        /*線*/
+    flex-basis:25%;                             /*幅*/
+    padding:10px 15px;                          /*要素内余白*/
+    margin:20px 0;                              /*要素外余白*/
+    text-align: center;                         /*配置(中央揃え)*/
+}
+
+/*h2要素について*/
+h2{
+    font-size: 25px;                                        /*文字サイズ*/
+    border-bottom:3px dotted rgb(236, 122, 122);            /*下線*/
+}
+
+/*h2タグの要素の直前*/
+h2::before {
+    content: "●";                       /*コンテンツ*/
+    color:rgb(239, 111, 139);           /*色*/
+}
+
+/*divタグ内2つ目のp要素の一文字目について*/
+div p:nth-of-type(2)::first-letter{
+    font-weight:bold;                   /*太字*/
+    color:rgb(97, 206, 249);            /*水色*/
+}
+
+/*class名contents内のimg要素について*/
+img{
+    margin:10px 0;                      /*余白*/
+    width: 70%;                         /*幅*/
+}
+
+/*フッター*/
+footer{
+    background-color:rgb(244, 79, 79);      /*背景色*/
+    text-align:center;                      /*配置*/
+}
+
+/*リンクの文字色*/
+a{
+    color: rgb(255, 255, 255);
+}
+
+/*訪問済みリンクの文字色*/
+a:visited  {
+    color:rgb(193, 234, 251);
+}
+
+/*マウスカーソルに乗った時の文字色*/
+a:hover {
+    color:rgb(245, 178, 168);
+}
+
+/*画面幅768px以下になった時の表示*/
+@media screen and (max-width:768px) {
+    
+    h2{
+        font-size: 30px;        /*h2タグの文字サイズ*/
+    }
+
+    p{
+        font-size:25px;         /*pタグの文字サイズ*/
+    }
+
+    #parent{
+        display:inline;         /*id名parent要素を縦配置*/
+    }
+}
